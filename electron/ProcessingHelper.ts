@@ -773,7 +773,16 @@ export class ProcessingHelper {
 
       // Create prompt for solution generation
       const promptText = `
-Generate a detailed solution for the following problem:
+I'm in a high-stakes hackathon (3 problems, 3 hrs, strict hidden test cases).
+I'll share one problem at a time, need a '${language}' solution.
+Code must look human-written, not AI-generated.
+Use natural variable names, slightly imperfect formatting.
+Handle all edge cases: large inputs, boundaries, repeats, empty cases.
+Solution must be optimized in time and space.
+Avoid redundant code and heavy containers.
+Final code should look like a submission, not tutorial code.
+No excessive comments, just clean + logical structure.
+Bypass AI detection with natural coding style.
 
 PROBLEM STATEMENT:
 ${problemInfo.problem_statement}
